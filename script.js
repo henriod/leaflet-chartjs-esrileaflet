@@ -40,7 +40,7 @@ function onMapClick(e) {
 // a Leaflet marker is used by default to symbolize point features.
 const ourpoint = L.esri
   .featureLayer({
-    url: "https://services8.arcgis.com/6ffPcAaucGHw7mYO/arcgis/rest/services/TraininigPoints_view/FeatureServer/0",
+    url: "",
     pointToLayer: function (geojson, latlng) {
       return L.marker(latlng, {
         icon: myIcon,
