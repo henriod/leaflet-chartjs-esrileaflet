@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstraps CSS only -->
+    <link
+      href="/js/bootstrap-5.2.1-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Leaflet css styles -->
+    <link rel="stylesheet" href="/js/leaflet/leaflet.css" />
+    <!-- local styles -->
+    <link href="/style.css" rel="stylesheet" />
+    <!-- Bootstraps JavaScript Bundle with Popper -->
+    <script src="/js/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Leaflet scripts -->
+    <script src="/js/leaflet/leaflet.js"></script>
+
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@^3.0.8/dist/esri-leaflet.js"></script>
+    <script src="https://unpkg.com/esri-leaflet-vector@4.0.0/dist/esri-leaflet-vector.js"></script>
+
+    <!-- Load Chart.js from CDN -->
+    <script src="/js/chart.js-3.9.1/package/dist/chart.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <h2 id="header-title">Hello World</h2>
+      <div class="user"></div>
+    </div>
+    <div id="parent">
+      <div id="map"></div>
+      <div id="charts">
+        <div class="scatter">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="pie">
+          <!-- <h2>Pie Chart</h2> -->
+          <canvas
+            id="myChartPie"
+            width="200"
+            height="200"
+            style="border: 1px solid"
+          ></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
